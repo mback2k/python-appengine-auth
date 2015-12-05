@@ -36,8 +36,8 @@ Add the package to your `INSTALLED_APPS`:
 Add the desired backends to your `AUTHENTICATION BACKENDS`:
 
     AUTHENTICATION_BACKENDS += (
-        'social_appengine_auth.backends.GoogleAppEngineOAuthBackend',
-        'social_appengine_auth.backends.GoogleAppEngineOAuth2Backend',
+        'social_appengine_auth.backends.GoogleAppEngineOAuth',
+        'social_appengine_auth.backends.GoogleAppEngineOAuth2',
     )
 
 Add the pipeline to your `SOCIAL_AUTH_PIPELINE`:
@@ -63,19 +63,19 @@ Additional Settings
 Add some or all of the following settings to your `settings.py`:
 
     # Hostname of the OAuth and Web Service endpoint
-    GOOGLE_APPENGINE_OAUTH_SERVER = 'oauth-profile.appspot.com'
+    SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH_SERVER = 'oauth-profile.appspot.com'
 
     # Use static and unique Google App Engine user's user_id as identifier
     # Defaults to False which makes it use the user's email address
     GOOGLE_APPENGINE_OAUTH_USE_UNIQUE_USER_ID = True
 
     # Setup Google OAuth 1.0 consumer key and secret
-    GOOGLE_APPENGINE_CONSUMER_KEY = ''
-    GOOGLE_APPENGINE_CONSUMER_SECRET = ''
+    SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH_KEY = ''
+    SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH_KEY = ''
 
     # or Setup Google OAuth 2.0 client id and secret
-    GOOGLE_APPENGINE_CLIENT_ID = ''
-    GOOGLE_APPENGINE_CLIENT_SECRET = ''
+    SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH2_KEY = ''
+    SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH2_SECRET = ''
 
 Please refer to the [Python-Social-Auth](http://psa.matiasaguirre.net/)
 documentation for additional information.
