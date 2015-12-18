@@ -67,7 +67,8 @@ Add some or all of the following settings to your `settings.py`:
 
     # Use static and unique Google App Engine user's user_id as identifier
     # Defaults to False which makes it use the user's email address
-    GOOGLE_APPENGINE_OAUTH_USE_UNIQUE_USER_ID = True
+    SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH_USE_UNIQUE_USER_ID = True
+    SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH2_USE_UNIQUE_USER_ID = True
 
     # Setup Google OAuth 1.0 consumer key and secret
     SOCIAL_AUTH_GOOGLE_APPENGINE_OAUTH_KEY = ''
