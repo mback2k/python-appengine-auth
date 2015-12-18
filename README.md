@@ -12,7 +12,7 @@ which is by default hosted at https://oauth-profile.appspot.com/
 Dependencies
 ------------
 - python-social-auth [https://github.com/omab/python-social-auth]
-- oauthlib           [https://github.com/idan/oauthlib/]
+- requests-oauthlib  [https://github.com/requests/requests-oauthlib]
 
 Installation
 ------------

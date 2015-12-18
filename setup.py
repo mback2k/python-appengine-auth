@@ -21,7 +21,7 @@ setup(
     url='https://github.com/mback2k/python-appengine-auth',
     license='MIT',
     description=' '.join(__import__('social_appengine_auth').__doc__.splitlines()).strip(),
-    install_requires=['python-social-auth>=0.2.1', 'oauthlib>=0.3.8'],
+    install_requires=['python-social-auth>=0.2.1', 'requests-oauthlib>=0.3.0'],
     classifiers=[
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'Intended Audience :: Developers',
